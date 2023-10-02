@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tim Clark</title>
+    <link rel="icon" href="/public/favicon.svg" />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+      }
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: rgb(52, 52, 52);
+        padding: 20px;
+      }
+      hr {
+        margin: 24px 0;
+      }
+      h1 {
+        margin: 0;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      h2 {
+        margin: 0;
+        padding-bottom: 8px;
+        text-align: center;
+      }
+      h3 {
+        margin: 0;
+      }
+      .inline-link {
+        color: white;
+      }
+      .contact-link {
+        color: white;
+        text-decoration: none;
+      }
+      .connect-container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+      .about-container {
+        font-size: 18px;
+        padding-bottom: 40px;
+      }
+      .things-container {
+        border: white solid 1px;
+        border-radius: 12px;
+        padding: 14px;
+        align-self: start;
+      }
+      .things-container ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 12px;
+      }
+      .things-container li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+      }
+      .things-header {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 14px;
+      }
+      .things {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      @media (max-width: 640px) {
+        .things {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>
+        Hi, my name is Tim and I write code 👋 <br />
+        Thanks for stopping by
+      </h1>
+      <hr />
+      <div class="about-container">
+        I am a senior full stack engineer. My current stack is Typescript,
+        Next.js, Fastify, and PostgreSQL. I recently started playing around with
+        Svelte and am loving it. Occasionally I post on
+        <a href="https://dev.to/tmrc" class="inline-link" target="_blank"
+          >dev.to</a
+        >.
+        <br />
+        <br />
+        Below is a list of technologies I have experience with. The 🔥 emoji
+        denotes something I have lots of recent experience with. The ❄️ emoji is
+        denotes something I haven't used in a while.
+      </div>
+
+      <div class="things">
+        <!-- Languages -->
+        <div class="things-container">
+          <h3 class="things-header">Languages</h3>
+          <ul>
+            <li>
+              <img src="public/javascript.svg" width="20px" />Javascript 🔥
+            </li>
+            <li>
+              <img src="public/typescript.svg" width="20px" />Typescript 🔥
+            </li>
+            <li><img src="public/ruby.svg" width="20px" />Ruby ❄️</li>
+            <li><img src="public/sql.png" width="20px" />SQL</li>
+          </ul>
+        </div>
+        <!-- Frameworks -->
+        <div class="things-container">
+          <h3 class="things-header">Frameworks</h3>
+          <ul>
+            <li><img src="public/nextjs.svg" width="20px" />Next.js 🔥</li>
+            <li><img src="public/svelte.svg" width="20px" />SvelteKit</li>
+            <li><img src="public/fastify.svg" width="20px" />Fastify 🔥</li>
+            <li><img src="public/expressjs.svg" width="20px" />Express.js</li>
+            <li><img src="public/ruby.svg" width="20px" />Ruby on Rails</li>
+          </ul>
+        </div>
+        <!-- Database -->
+        <div class="things-container">
+          <h3 class="things-header">Databases & ORMs</h3>
+          <ul>
+            <li><img src="public/postgresql.svg" width="20px" />PostgreSQL</li>
+            <li><img src="public/postgis.svg" width="20px" />PostGIS️</li>
+            <li><img src="public/mysql.svg" width="20px" />MySQL ❄️</li>
+            <li>
+              <img
+                src="public/mongodb.svg"
+                width="20px"
+                height="20px"
+                style="object-fit: contain"
+              />MongoDB
+            </li>
+            <li><img src="public/dynamo.svg" width="20px" />DynamoDB</li>
+            <li><img src="public/redis.svg" width="20px" />Redis</li>
+            <li><img src="public/typeorm.svg" width="20px" />TypeORM 🔥</li>
+            <li><img src="public/prisma.svg" width="20px" />Prisma</li>
+            <li><img src="public/drizzle.png" width="20px" />Drizzle</li>
+          </ul>
+        </div>
+        <!-- Styling -->
+        <div class="things-container">
+          <h3 class="things-header">Styling</h3>
+          <ul>
+            <li>
+              <img src="public/tailwindcss.svg" width="20px" />Tailwind 🔥
+            </li>
+            <li>
+              <img src="public/headlessui.svg" width="20px" />Headless UI 🔥
+            </li>
+            <li><img src="public/emotion.png" width="20px" />Emotion</li>
+            <li>
+              <img src="public/styledcomponents.svg" width="20px" />Styled
+              Components
+            </li>
+            <li><img src="public/framer.svg" width="20px" />Framer Motion</li>
+            <li><img src="public/sass.svg" width="20px" />SASS</li>
+            <li><img src="public/css.svg" width="20px" />CSS</li>
+          </ul>
+        </div>
+        <!-- Bundlers & Build Tools -->
+        <div class="things-container">
+          <h3 class="things-header">Bundlers & Build Tools</h3>
+          <ul>
+            <li><img src="public/rollup.svg" width="20px" />Rollup</li>
+            <li><img src="public/esbuild.svg" width="20px" />Esbuild</li>
+            <li><img src="public/turborepo.svg" width="20px" />TurboRepo</li>
+          </ul>
+        </div>
+        <!-- Infrastructure -->
+        <div class="things-container">
+          <h3 class="things-header">Infrastructure</h3>
+          <ul>
+            <li><img src="public/vercel.svg" width="20px" />Vercel 🔥</li>
+            <li><img src="public/aws.svg" width="20px" />AWS 🔥</li>
+            <li><img src="public/cloudflare.svg" width="20px" />Cloudflare</li>
+            <li>
+              <img src="public/cloudinary.svg" width="20px" />Cloudinary 🔥
+            </li>
+            <li><img src="public/neon.svg" width="20px" />Neon</li>
+          </ul>
+        </div>
+        <!-- 3rd party APIs -->
+        <div class="things-container">
+          <h3 class="things-header">3rd Party APIs</h3>
+          <ul>
+            <li><img src="public/twilio.svg" width="20px" />Twilio</li>
+            <li><img src="public/sendgrid.png" width="20px" />SendGrid</li>
+            <li><img src="public/stripe.png" width="20px" />Stripe 🔥</li>
+          </ul>
+        </div>
+        <!-- Miscellaneous -->
+        <div class="things-container">
+          <h3 class="things-header">Miscellaneous</h3>
+          <ul>
+            <li><img src="public/zod.svg" width="20px" />Zod 🔥</li>
+            <li><img src="public/nodejs.svg" width="20px" />Node.js 🔥</li>
+            <li><img src="public/docker.svg" width="20px" />Docker ❄️</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <h2>Let's Connect</h2>
+      <div class="connect-container">
+        <a href="mailto:tim@tmrc.dev" class="contact-link">
+          <img src="/public/email.svg" width="30px" />
+        </a>
+        <a
+          href="https://github.com/timclark97"
+          target="_blank"
+          class="contact-link"
+        >
+          <img src="/public/github.svg" width="30px" />
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
