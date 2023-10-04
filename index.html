@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tim Clark</title>
-    <link rel="icon" href="/icons/favicon.svg" />
+    <link rel="icon" href="/icons/wave.png" />
     <style>
       body {
         padding: 0;
         margin: 0;
         background-color: black;
         color: white;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: monospace;
         font-weight: 400;
       }
       main {
@@ -20,22 +20,34 @@
         margin: 0 auto;
         background-color: rgb(52, 52, 52);
         padding: 20px;
+        font-size: 18px;
       }
       hr {
         margin: 24px 0;
       }
       h1 {
         margin: 0;
+        font-size: 30px;
         text-align: center;
         margin-bottom: 20px;
       }
       h2 {
+        font-size: 22px;
+      }
+      h4 {
         margin: 0;
-        padding-bottom: 8px;
+        font-size: 30px;
+        padding-bottom: 16px;
         text-align: center;
       }
       h3 {
         margin: 0;
+      }
+      .about-preview {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
       .inline-link {
         color: white;
@@ -49,10 +61,7 @@
         justify-content: center;
         gap: 15px;
       }
-      .about-container {
-        font-size: 18px;
-        padding-bottom: 40px;
-      }
+
       .things-container {
         border: white solid 1px;
         border-radius: 12px;
@@ -81,6 +90,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+        font-size: 18px;
       }
       @media (max-width: 640px) {
         .things {
@@ -93,170 +103,137 @@
     <main>
       <h1>
         Hi 👋, I’m Tim Clark. <br />
-        I am a senior software engineer focused on speed and simplicity. <br />
-        Thanks for stopping by.
+        I'm a product engineer.
       </h1>
       <hr />
-      <div class="about-container">
-        I am a senior full stack engineer. My current stack is Typescript,
-        Next.js, Fastify, and PostgreSQL. I recently started playing around with
-        Svelte and am loving it. Occasionally I post on
-        <a href="https://dev.to/tmrc" class="inline-link" target="_blank"
-          >dev.to</a
-        >.
-        <br />
-        <br />
-        I am currently interested in learning the power and functionality of the
-        native API's provided by the browser and Node environments. My most
-        recent project is an end-to-end encrypted photo storage and sharing app
-        built using just the Web Crypto API and and a storage bucket.
-        <a
-          href="https://github.com/timclark97/family-photos"
-          class="inline-link"
-          target="_blank"
-          >Check it out on GitHub</a
-        >.
-        <br />
-        <br />
-        Below is a list of technologies I have experience with. The 🔥 emoji
-        denotes something I have lots of recent experience with. The ❄️ emoji
-        denotes something I haven't used in a while but can pick back up
-        immediately.
+      <div>
+        <p>
+          I have worked directly with founders, Product Managers, Operations,
+          Finance, Customer Support, and Engineers to design and ship entirely
+          new software suites as well as optimize existing ones. I pride myself
+          on being able to work with just about anybody to make awesome
+          software.
+        </p>
       </div>
+      <hr />
+      <!-- About preview -->
+      <div class="about-container">
+        <h2>My Journey Into Software</h2>
+        <p>
+          My path into software is a bit unique! After studying physics for a
+          few semesters, I decided to take a break from school and focus on
+          saving up money.
+        </p>
+        <p class="about-preview">
+          I was working in customer support at a start up at the time. As I got
+          to know the product and business through answering tickets, I became
+          fascinated with how SaaS companies are built and operate. I often
+          stayed after hours getting to know the engineers and asking them tons
+          of questions about how things worked.
+        </p>
+        <span
+          ><a class="inline-link" href="/about.html"
+            >Read the rest the story</a
+          ></span
+        >
+        <hr />
+        <!-- <p>
+          I am currently interested in learning the power and functionality of
+          the native API's provided by the browser and Node environments. My
+          most recent project is an end-to-end encrypted photo storage and
+          sharing app built using just the Web Crypto API and and a storage
+          bucket.
+          <a
+            href="https://github.com/timclark97/family-photos"
+            class="inline-link"
+            target="_blank"
+            >Check it out on GitHub</a
+          >.
+        </p> -->
+      </div>
+      <!-- Technologies preview -->
+      <div>
+        <h2>Technologies</h2>
+        <p>
+          Below is a list of technologies I have used. I find learning new tools
+          exciting and am always looking to expand my skill set. I hope this
+          list continues to grow.
+        </p>
 
-      <div class="things">
-        <!-- Languages -->
-        <div class="things-container">
-          <h3 class="things-header">Languages</h3>
-          <ul>
-            <li>
-              <img src="icons/javascript.svg" width="20px" />Javascript 🔥
-            </li>
-            <li>
-              <img src="icons/typescript.svg" width="20px" />Typescript 🔥
-            </li>
-            <li><img src="icons/ruby.svg" width="20px" />Ruby ❄️</li>
-            <li><img src="icons/sql.png" width="20px" />SQL</li>
-          </ul>
-        </div>
-        <!-- Frameworks -->
-        <div class="things-container">
-          <h3 class="things-header">Frameworks</h3>
-          <ul>
-            <li><img src="icons/nextjs.svg" width="20px" />Next.js 🔥</li>
-            <li><img src="icons/svelte.svg" width="20px" />SvelteKit</li>
-            <li><img src="icons/fastify.svg" width="20px" />Fastify 🔥</li>
-            <li><img src="icons/expressjs.svg" width="20px" />Express.js</li>
-            <li><img src="icons/ruby.svg" width="20px" />Ruby on Rails ❄️</li>
-          </ul>
-        </div>
-        <!-- Database -->
-        <div class="things-container">
-          <h3 class="things-header">Databases & ORMs</h3>
-          <ul>
-            <li><img src="icons/postgresql.svg" width="20px" />PostgreSQL</li>
-            <li><img src="icons/postgis.svg" width="20px" />PostGIS️</li>
-            <li><img src="icons/mysql.svg" width="20px" />MySQL ❄️</li>
-            <li>
-              <img
-                src="icons/mongodb.svg"
-                width="20px"
-                height="20px"
-                style="object-fit: contain"
-              />MongoDB
-            </li>
-            <li><img src="icons/dynamo.svg" width="20px" />DynamoDB</li>
-            <li><img src="icons/redis.svg" width="20px" />Redis</li>
-            <li><img src="icons/typeorm.svg" width="20px" />TypeORM 🔥</li>
-            <li><img src="icons/prisma.svg" width="20px" />Prisma</li>
-            <li><img src="icons/drizzle.png" width="20px" />Drizzle</li>
-          </ul>
-        </div>
-        <!-- Styling -->
-        <div class="things-container">
-          <h3 class="things-header">Styling</h3>
-          <ul>
-            <li><img src="icons/tailwindcss.svg" width="20px" />Tailwind 🔥</li>
-            <li>
-              <img src="icons/headlessui.svg" width="20px" />Headless UI 🔥
-            </li>
-            <li><img src="icons/emotion.png" width="20px" />Emotion</li>
-            <li>
-              <img src="icons/styledcomponents.svg" width="20px" />Styled
-              Components
-            </li>
-            <li><img src="icons/framer.svg" width="20px" />Framer Motion</li>
-            <li><img src="icons/sass.svg" width="20px" />SASS</li>
-            <li><img src="icons/css.svg" width="20px" />CSS</li>
-          </ul>
-        </div>
-        <!-- Bundlers & Build Tools -->
-        <div class="things-container">
-          <h3 class="things-header">Bundlers & Build Tools</h3>
-          <ul>
-            <li><img src="icons/rollup.svg" width="20px" />Rollup</li>
-            <li><img src="icons/esbuild.svg" width="20px" />Esbuild</li>
-            <li><img src="icons/turborepo.svg" width="20px" />TurboRepo</li>
-          </ul>
-        </div>
-        <!-- Infrastructure -->
-        <div class="things-container">
-          <h3 class="things-header">Infrastructure</h3>
-          <ul>
-            <li><img src="icons/vercel.svg" width="20px" />Vercel 🔥</li>
-            <li><img src="icons/aws.svg" width="20px" />AWS 🔥</li>
-            <li><img src="icons/cloudflare.svg" width="20px" />Cloudflare</li>
-            <li>
-              <img src="icons/cloudinary.svg" width="20px" />Cloudinary 🔥
-            </li>
-            <li><img src="icons/neon.svg" width="20px" />Neon</li>
-          </ul>
-        </div>
-        <!-- 3rd party APIs -->
-        <div class="things-container">
-          <h3 class="things-header">3rd Party APIs</h3>
-          <ul>
-            <li><img src="icons/twilio.svg" width="20px" />Twilio</li>
-            <li><img src="icons/sendgrid.png" width="20px" />SendGrid</li>
-            <li><img src="icons/stripe.png" width="20px" />Stripe 🔥</li>
-            <li><img src="icons/auth0.png" width="20px" />Auth0</li>
-          </ul>
-        </div>
-        <!-- MarTech -->
-        <div class="things-container">
-          <h3 class="things-header">MarTech</h3>
-          <ul>
-            <li><img src="icons/facebook.svg" width="20px" />Facebook Pixel</li>
-            <li><img src="icons/google.svg" width="20px" />Google Analytics</li>
-            <li><img src="icons/mixpanel.ico" width="20px" />Mixpanel</li>
-            <li><img src="icons/beehiiv.jpeg" width="20px" />Beehiiv</li>
-          </ul>
-        </div>
-        <!-- Miscellaneous -->
-        <div class="things-container">
-          <h3 class="things-header">Miscellaneous</h3>
-          <ul>
-            <li><img src="icons/zod.svg" width="20px" />Zod 🔥</li>
-            <li><img src="icons/nodejs.svg" width="20px" />Node.js 🔥</li>
-            <li><img src="icons/docker.svg" width="20px" />Docker ❄️</li>
-            <li><img src="icons/jest.svg" width="20px" />Jest</li>
-            <li><img src="icons/storybook.svg" width="20px" />Storybook</li>
-          </ul>
+        <div class="things">
+          <!-- Current Stack -->
+          <div class="things-container">
+            <h3 class="things-header">Current Stack</h3>
+            <ul>
+              <li><img src="icons/typescript.svg" width="20px" />TypeScript</li>
+              <li><img src="icons/nextjs.svg" width="20px" />Next.js</li>
+              <li>
+                <img src="icons/tailwindcss.svg" width="20px" />Tailwind CSS
+              </li>
+              <li><img src="icons/nodejs.svg" width="20px" />Node.js</li>
+              <li><img src="icons/fastify.svg" width="20px" />Fastify</li>
+              <li><img src="icons/postgis.svg" width="20px" />PostgreSQL</li>
+              <li><img src="icons/typeorm.svg" width="20px" />TypeORM</li>
+            </ul>
+          </div>
+
+          <!-- Languages -->
+          <div class="things-container">
+            <h3 class="things-header">Languages</h3>
+            <ul>
+              <li><img src="icons/javascript.svg" width="20px" />JavaScript</li>
+              <li><img src="icons/typescript.svg" width="20px" />TypeScript</li>
+              <li><img src="icons/ruby.svg" width="20px" />Ruby ️</li>
+              <li><img src="icons/sql.png" width="20px" />SQL</li>
+            </ul>
+          </div>
+          <div>
+            <a class="inline-link" href="/technologies.html">See the rest</a>
+          </div>
         </div>
       </div>
       <hr />
-      <h2>Let's Connect</h2>
-      <div class="connect-container">
-        <a href="mailto:tim@tmrc.dev" class="contact-link">
-          <img src="/icons/email.svg" width="30px" />
-        </a>
-        <a
-          href="https://github.com/timclark97"
-          target="_blank"
-          class="contact-link"
-        >
-          <img src="/icons/github.svg" width="30px" />
-        </a>
+      <!-- What I'm working on -->
+      <div>
+        <h2>What I'm Working On</h2>
+        <p>
+          I am currently learning Svelte and SvelteKit. I have a lot of thoughts
+          about it, so be on the lookout for a blog post in the near future. The
+          title might be "Svelte Is Ready To Replace React" if that gives you
+          any indication of how I am feeling about it.
+        </p>
+        <p>
+          I am also interested in learning all the standard Web APIs browsers
+          come equipped with. I have been paying around with the Web Crypto API
+          specifically. It is powering my latest project, and end-to-end
+          encrypted file upload and sharing app written in Svelte.
+          <a
+            class="inline-link"
+            href="https://github.com/timclark97/family-photos"
+            >Check that out here</a
+          >.
+        </p>
+        <p>
+          I also blog on dev.to occasionally.
+          <a href="https://dev.to/tmrc" class="inline-link">Follow me there</a>.
+        </p>
+      </div>
+      <hr />
+      <!-- Let's connect -->
+      <div>
+        <h4>Let's Connect</h4>
+        <div class="connect-container">
+          <a href="mailto:tim@tmrc.dev" class="contact-link">
+            <img src="/icons/email.svg" width="30px" />
+          </a>
+          <a
+            href="https://github.com/timclark97"
+            target="_blank"
+            class="contact-link"
+          >
+            <img src="/icons/github.svg" width="30px" />
+          </a>
+        </div>
       </div>
     </main>
   </body>
