@@ -61,6 +61,26 @@
         justify-content: center;
         gap: 15px;
       }
+      .work-container::-webkit-scrollbar {
+        display: none;
+      }
+      .work-container {
+        scroll-padding: 45px;
+        display: flex;
+        gap: 16px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        margin: 0 -20px;
+        padding: 0 20px;
+      }
+      .work-link {
+        scroll-snap-align: start;
+      }
+      .work-image {
+        border-radius: 4px;
+      }
 
       .things-container {
         border: white solid 1px;
@@ -141,6 +161,7 @@
             </a>
           </div>
         </div>
+
         <!-- <p>
           With experience in both frontend and backend development as well as
           system architecting, I am comfortable working on any part of the
@@ -151,28 +172,60 @@
         <!-- <p>Interested in working together?</p> -->
       </div>
       <hr />
-      <!-- About preview -->
-      <div class="about-container">
-        <h2>My Journey Into Software</h2>
-        <p>
-          My path into software is unique. After studying physics for a few
-          semesters, I decided to take a break from school and focus on saving
-          money.
-        </p>
-        <p class="about-preview">
-          I was working in customer support at a start-up at the time. As I
-          learned the product and business through answering tickets, I became
-          interested in how SaaS companies are built and operate. I often stayed
-          after hours getting to know the engineers and asking them many
-          questions about how things worked.
-        </p>
-        <span
-          ><a class="inline-link" href="/about.html"
-            >Read the rest of the story</a
-          ></span
-        >
-        <hr />
+      <div>
+        <h2>My Work</h2>
+        <div class="work-container">
+          <a href="https://www.laborem.com" target="_blank" class="work-link">
+            <img
+              class="work-image"
+              src="/images/l-screenshot.png"
+              alt="Laborem.com"
+              width="200"
+            />
+          </a>
+          <a href="https://www.rvshare.com" target="_blank" class="work-link">
+            <img
+              class="work-image"
+              src="/images/rvs-screenshot.png"
+              alt="RVshare.com"
+              width="200"
+            />
+          </a>
+          <a href="https://www.21proud.com" target="_blank" class="work-link">
+            <img
+              class="work-image"
+              src="/images/top-screenshot.png"
+              alt="21Proud.com"
+              width="200"
+            />
+          </a>
+          <a
+            href="https://www.apprenticeship.me"
+            target="_blank"
+            class="work-link"
+          >
+            <img
+              class="work-image"
+              src="/images/a-screenshot.jpg"
+              alt="Apprenticeship.me"
+              width="200"
+            />
+          </a>
+          <a
+            href="https://www.tradeschool.com"
+            target="_blank"
+            class="work-link"
+          >
+            <img
+              class="work-image"
+              src="/images/ts-screenhot.jpg"
+              alt="Tradeschool.com"
+              width="200"
+            />
+          </a>
+        </div>
       </div>
+      <hr />
       <!-- Technologies preview -->
       <div>
         <h2>Technologies</h2>
@@ -215,6 +268,29 @@
         </div>
       </div>
       <hr />
+      <!-- About preview -->
+      <div class="about-container">
+        <h2>My Journey Into Software</h2>
+        <p>
+          My path into software is unique. After studying physics for a few
+          semesters, I decided to take a break from school and focus on saving
+          money.
+        </p>
+        <p class="about-preview">
+          I was working in customer support at a start-up at the time. As I
+          learned the product and business through answering tickets, I became
+          interested in how SaaS companies are built and operate. I often stayed
+          after hours getting to know the engineers and asking them many
+          questions about how things worked.
+        </p>
+        <span
+          ><a class="inline-link" href="/about.html"
+            >Read the rest of the story</a
+          ></span
+        >
+        <hr />
+      </div>
+
       <!-- What I'm working on -->
       <div>
         <h2>What I'm Working On</h2>
