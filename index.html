@@ -1,347 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tim Clark</title>
-    <link rel="icon" href="/icons/wave.png" />
-    <style>
-      body {
-        padding: 0;
-        margin: 0;
-        background-color: black;
-        color: white;
-        font-family: monospace;
-        font-weight: 400;
-      }
-      main {
-        max-width: 800px;
-        margin: 0 auto;
-        background-color: rgb(52, 52, 52);
-        padding: 20px;
-        font-size: 18px;
-      }
-      hr {
-        margin: 24px 0;
-      }
-      h1 {
-        margin: 0;
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      h2 {
-        font-size: 22px;
-      }
-      h4 {
-        margin: 0;
-        font-size: 30px;
-        padding-bottom: 16px;
-        text-align: center;
-      }
-      h3 {
-        margin: 0;
-      }
-      .about-preview {
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-      }
-      .inline-link {
-        color: white;
-      }
-      .contact-link {
-        color: white;
-        text-decoration: none;
-      }
-      .connect-container {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-      }
-      .blog-links {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-      .work-container::-webkit-scrollbar {
-        display: none;
-      }
-      .work-container {
-        scroll-padding: 45px;
-        display: flex;
-        gap: 16px;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-        margin: 0 -20px;
-        padding: 0 20px;
-      }
-      .work-link {
-        scroll-snap-align: start;
-      }
-      .work-image {
-        border-radius: 4px;
-      }
 
-      .things-container {
-        border: white solid 1px;
-        border-radius: 12px;
-        padding: 14px;
-        align-self: start;
-      }
-      .things-container ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: grid;
-        gap: 12px;
-      }
-      .things-container li {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 18px;
-      }
-      .things-header {
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 14px;
-      }
-      .things {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        font-size: 18px;
-      }
-      @media (max-width: 640px) {
-        .things {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>
-        Hi, I’m Tim Clark 👋. <br />
-        I like to make awesome products.
-      </h1>
-      <hr />
-      <div>
-        <p>
-          I'm an experienced software engineer passionate about making
-          performant, secure, easy-to-use applications that improve people's
-          lives.
-        </p>
-        <p>
-          My ability to learn quickly, coupled with my focus on empathy and
-          communication, has made me hyper-effective while working with founders
-          on the start-up ground floor and with large cross-functional teams in
-          companies with 1000+ employees.
-        </p>
-        <div>
-          <h4>Let's Connect</h4>
-          <div class="connect-container">
-            <a href="mailto:tim@tmrc.dev" class="contact-link">
-              <img src="/icons/email.svg" width="30px" />
-            </a>
-            <a
-              href="https://github.com/timclark97"
-              target="_blank"
-              class="contact-link"
-            >
-              <img src="/icons/github.svg" width="30px" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/tim-clark-bb687a294/"
-              target="_blank"
-              class="contact-link"
-            >
-              <img src="/icons/linkedin.svg" width="30px" />
-            </a>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tim Clark</title>
+  <link rel="icon" href="/icons/wave.png" />
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: monospace;
+      font-weight: 400;
+    }
 
-        <!-- <p>
-          With experience in both frontend and backend development as well as
-          system architecting, I am comfortable working on any part of the
-          stack. I have acted as a solo dev going head down on complex problems
-          and as a member of large cross functional teams with lots of
-          stakeholders.
-        </p> -->
-        <!-- <p>Interested in working together?</p> -->
-      </div>
-      <hr />
-      <div>
-        <h2>Latest Blog Posts</h2>
-        <div class="blog-links">
-          <a
-            class="inline-link"
-            target="_blank"
-            href="https://dev.to/tmrc/scoped-github-status-checks-in-a-monorepo-1ni5"
-            >Scoped Branch Protection With GitHub And Monorepos
-          </a>
-          <a
-            class="inline-link"
-            target="_blank"
-            href="https://dev.to/tmrc/adding-sign-in-with-google-to-a-remix-app-from-scratch-aon"
-            >Adding Sign In With Google To A Remix App From Scratch
-          </a>
-          <a
-            class="inline-link"
-            target="_blank"
-            href="https://dev.to/tmrc/the-last-file-input-tutorial-youll-ever-need-2023-4ppd"
-            >Web File API Deep Dive
-          </a>
-          <a class="inline-link" target="_blank" href="https://dev.to/tmrc"
-            >See all...</a
-          >
-        </div>
-      </div>
-      <hr />
-      <div>
-        <h2>My Work</h2>
-        <div class="work-container">
-          <a href="https://www.laborem.com" target="_blank" class="work-link">
-            <img
-              class="work-image"
-              src="/images/l-screenshot.png"
-              alt="Laborem.com"
-              width="200"
-            />
-          </a>
-          <a href="https://www.rvshare.com" target="_blank" class="work-link">
-            <img
-              class="work-image"
-              src="/images/rvs-screenshot.png"
-              alt="RVshare.com"
-              width="200"
-            />
-          </a>
-          <a href="https://www.21proud.com" target="_blank" class="work-link">
-            <img
-              class="work-image"
-              src="/images/top-screenshot.png"
-              alt="21Proud.com"
-              width="200"
-            />
-          </a>
-          <a
-            href="https://www.apprenticeship.me"
-            target="_blank"
-            class="work-link"
-          >
-            <img
-              class="work-image"
-              src="/images/a-screenshot.jpg"
-              alt="Apprenticeship.me"
-              width="200"
-            />
-          </a>
-          <a
-            href="https://www.tradeschool.com"
-            target="_blank"
-            class="work-link"
-          >
-            <img
-              class="work-image"
-              src="/images/ts-screenhot.jpg"
-              alt="Tradeschool.com"
-              width="200"
-            />
-          </a>
-        </div>
-      </div>
-      <hr />
-      <!-- Technologies preview -->
-      <div>
-        <h2>Technologies</h2>
-        <p>Below is a list of technologies I have used across my work.</p>
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgb(52, 52, 52);
+      padding: 20px;
+      font-size: 18px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
 
-        <div class="things">
-          <!-- Current Stack -->
-          <div class="things-container">
-            <h3 class="things-header">Current Stack</h3>
-            <ul>
-              <li><img src="icons/typescript.svg" width="20px" />TypeScript</li>
+<body>
+  <main>
+    <div>
+      I write code.
+    </div>
+  </main>
+</body>
 
-              <li><img src="icons/react.svg" width="20px" />React</li>
-              <li><img src="icons/remix.svg" width="20px" />Remix</li>
-              <li>
-                <img src="icons/tailwindcss.svg" width="20px" />Tailwind CSS
-              </li>
-              <li><img src="icons/nodejs.svg" width="20px" />Node.js</li>
-              <li><img src="icons/sqlite.svg" width="20px" />Sqlite</li>
-              <li><img src="icons/drizzle.png" width="20px" />Drizzle</li>
-            </ul>
-          </div>
-
-          <!-- Languages -->
-          <div class="things-container">
-            <h3 class="things-header">Languages</h3>
-            <ul>
-              <li><img src="icons/javascript.svg" width="20px" />JavaScript</li>
-              <li><img src="icons/typescript.svg" width="20px" />TypeScript</li>
-              <li><img src="icons/ruby.svg" width="20px" />Ruby ️</li>
-              <li><img src="icons/sql.png" width="20px" />SQL</li>
-            </ul>
-          </div>
-          <div>
-            <a class="inline-link" href="/technologies.html">See the rest</a>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <!-- About preview -->
-      <!-- <div class="about-container">
-        <h2>My Journey Into Software</h2>
-        <p>
-          My path into software is unique. After studying physics for a few
-          semesters, I decided to take a break from school and focus on saving
-          money.
-        </p>
-        <p class="about-preview">
-          I was working in customer support at a start-up at the time. As I
-          learned the product and business through answering tickets, I became
-          interested in how SaaS companies are built and operate. I often stayed
-          after hours getting to know the engineers and asking them many
-          questions about how things worked.
-        </p>
-        <span
-          ><a class="inline-link" href="/about.html"
-            >Read the rest of the story</a
-          ></span
-        >
-        <hr />
-      </div> -->
-
-      <!-- Let's connect -->
-      <div>
-        <h4>Let's Connect</h4>
-        <div class="connect-container">
-          <a href="mailto:tim@tmrc.dev" class="contact-link">
-            <img src="/icons/email.svg" width="30px" />
-          </a>
-          <a
-            href="https://github.com/timclark97"
-            target="_blank"
-            class="contact-link"
-          >
-            <img src="/icons/github.svg" width="30px" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/tim-clark-bb687a294/"
-            target="_blank"
-            class="contact-link"
-          >
-            <img src="/icons/linkedin.svg" width="30px" />
-          </a>
-        </div>
-      </div>
-    </main>
-  </body>
 </html>
